@@ -1,0 +1,15 @@
+$icon-font-path: "../../bower_components/font-awesome/fonts";
+$fa-font-path:  "../../bower_components/font-awesome/fonts";
+
+// Manually set the import paths of your dependencies here
+@import "../../bower_components/sass-font-stacker/sass/index";
+@import "../../bower_components/angular-materialize/css/style.css";
+@import "../../bower_components/Materialize/sass/materialize";
+@import "../../bower_components/Materialize/dist/css/materialize.css";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+@import "../../bower_components/font-awesome/scss/_icons";
+
+//All of your *.scss files will automatically be compiled and injected into the block below. Don't add anything manually
+// in the below block or it will be deleted.
+/*** scss-inject ***/
+/*** end scss-inject ***/

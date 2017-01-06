@@ -1,0 +1,45 @@
+.jumbotron {
+	color: #fff;
+	background-color: transparent;
+}
+
+.navButtons a:hover {
+  color: black;
+  text-decoration: none !important;
+}
+
+.navButtons a:link {
+  color: black;
+  text-decoration: none !important;
+}
+
+.navButtons a:active {
+  color: black;
+  text-decoration: none !important;
+}
+
+.navButtons a:visited {
+  color: black;
+  text-decoration: none !important;
+}
+
+.slider .indicators {
+  display: none !important;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+
+.angular-google-map-container { height: 400px; }
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

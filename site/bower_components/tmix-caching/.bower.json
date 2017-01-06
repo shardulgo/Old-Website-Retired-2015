@@ -1,0 +1,40 @@
+{
+  "name": "tmixCaching",
+  "version": "1.2.1",
+  "description": "AngularJS service that extends $cacheFactory",
+  "keywords": [
+    "JavaScript",
+    "tmix",
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/01org/tmix-caching",
+  "main": [
+    "tmixCaching.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "1.2 - 2",
+    "angular-resource": "1.2 - 2",
+    "angular-route": "1.2 - 2"
+  },
+  "devDependencies": {
+    "sinon-1.11.1": "http://sinonjs.org/releases/sinon-1.11.1.js",
+    "angular-mocks": "1.2 - 2",
+    "angular-scenario": "1.2 - 2"
+  },
+  "_release": "1.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.1",
+    "commit": "7809a95f8188cc8dec091e0c7d8515b0bd249bbb"
+  },
+  "_source": "https://github.com/01org/tmix-caching.git",
+  "_target": "^1.2.0",
+  "_originalSource": "tmix-caching"
+}
