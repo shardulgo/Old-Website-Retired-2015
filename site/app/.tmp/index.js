@@ -1,41 +1,41 @@
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-/******/
+
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/
+
 /******/ 		// Check if module is in cache
 /******/ 		if(installedModules[moduleId])
 /******/ 			return installedModules[moduleId].exports;
-/******/
+
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			exports: {},
 /******/ 			id: moduleId,
 /******/ 			loaded: false
 /******/ 		};
-/******/
+
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
+
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/
+
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
-/******/
+
+
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
-/******/
+
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-/******/
+
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
-/******/
+
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
 /******/ })
@@ -45,23 +45,23 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	__webpack_require__(1);
-	
+
 	__webpack_require__(2);
-	
+
 	__webpack_require__(3);
-	
+
 	// import './blog/blog.controller';
-	
+
 	__webpack_require__(4);
-	
+
 	__webpack_require__(5);
-	
+
 	__webpack_require__(6);
-	
+
 	__webpack_require__(7);
-	
+
 	__webpack_require__(8);
 
 /***/ },
@@ -69,10 +69,10 @@
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	(function () {
 		'use strict';
-	
+
 		angular.module('shardulGo', [
 		//Angular dependencies
 		'ngCookies', 'ngResource', 'ngSanitize', 'ngRoute',
@@ -80,7 +80,7 @@
 		'tmixCaching', 'ui.bootstrap', 'ui.materialize', 'uiGmapgoogle-maps'
 		//Custom dependencies
 		]).config(config);
-	
+
 		/* ngInject */
 		function config($routeProvider) {
 			$routeProvider.when('/', {
@@ -124,44 +124,43 @@
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	(function () {
 		'use strict';
-	
+
 		/**
 	  * @ngdoc module
 	  * @name starterAngularFractal.module:starterAngularFractal
 	  * @description Gets some squirrels on the scope.
 	  */
 		angular.module('shardulGo').controller('HomeController', Home);
-	
+
 		/* @ngInject */
 		function Home($scope, $window, $location, $route, preloader) {
 			var vm = this;
 			vm.route = route;
 			vm.triggerAnimations = triggerAnimations;
 			vm.sendEventTracker = sendEventTracker;
-	
+
 			vm.imageLocations = ["images/Picture3.png", "images/desk.jpg", "images/mopar.jpg", "images/parkway2.jpg", "images/me.jpg", "images/az.jpg", "images/asu.jpg"];
 			// Preload the images; then, update display when returned.
 			preloader.preloadImages(vm.imageLocations);
-	
+
 			init();
 			function init() {
 				$window.ga('send', 'pageview', { page: $location.url() });
-				console.log();
 			}
-	
+
 			vm.currentRoute = $route;
-	
+
 			function route(url) {
 				$location.path(url);
 			}
-	
+
 			function sendEventTracker(clicked) {
 				ga('send', 'event', clicked, 'clicked');
 			}
-	
+
 			function triggerAnimations() {
 				return "animate fadeIn";
 			}
@@ -173,33 +172,33 @@
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	(function () {
 		'use strict';
-	
+
 		/**
 	  * @ngdoc module
 	  * @name starterAngularFractal.module:starterAngularFractal
 	  * @description Gets some squirrels on the scope.
 	  */
 		angular.module('shardulGo').controller('AboutController', AboutController);
-	
+
 		/* @ngInject */
 		function AboutController($scope, $window, $location, $route, preloader) {
 			var vm = this;
 			vm.route = route;
 			vm.sendEventTracker = sendEventTracker;
 			vm.currentRoute = $route;
-	
+
 			function route(url) {
 				$location.path(url);
 			}
-	
+
 			init();
 			function init() {
 				$window.ga('send', 'pageview', { page: $location.url() });
 			}
-	
+
 			function sendEventTracker(clicked) {
 				ga('send', 'event', clicked, 'clicked');
 			}
@@ -211,27 +210,27 @@
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	(function () {
 		'use strict';
-	
+
 		/**
 	  * @ngdoc module
 	  * @name starterAngularFractal.module:starterAngularFractal
 	  * @description Gets some squirrels on the scope.
 	  */
 		angular.module('shardulGo').controller('EducationController', EducationController);
-	
+
 		/* @ngInject */
 		function EducationController($scope, $window, $location, $route) {
 			var vm = this;
 			vm.route = route;
 			vm.currentRoute = $route;
-	
+
 			function route(url) {
 				$location.path(url);
 			}
-	
+
 			init();
 			function init() {
 				$window.ga('send', 'pageview', { page: $location.url() });
@@ -247,72 +246,67 @@
 	 * Created by Krys on 9/17/2016.
 	 */
 	'use strict';
-	
+
 	(function () {
 		'use strict';
-	
+
 		/**
 	  * @ngdoc module
 	  * @name starterAngularFractal.module:starterAngularFractal
 	  * @description Gets some squirrels on the scope.
 	  */
 		angular.module('shardulGo').controller('ExperienceController', ExperienceController);
-	
+
 		/* @ngInject */
 		function ExperienceController($scope, $window, $location, $route, preloader) {
 			var vm = this;
 			var player;
-			var $ = function $(id) {
-				return document.getElementById(id);
-			};
-			var $$ = function $$(tagname) {
+			// var $ = function(id) { return document.getElementById(id); }
+			var youTubeFunc = function youTubeFunc(tagname) {
 				return document.getElementsByTagName(tagname);
 			};
-	
+
 			vm.route = route;
 			vm.triggerAnimations = triggerAnimations;
-	
+
 			vm.currentRoute = $route;
-	
+
 			function route(url) {
 				$location.path(url);
 			}
-	
+
 			init();
 			function init() {
 				$window.ga('send', 'pageview', { page: $location.url() });
-				console.log();
 			}
-	
+
 			function triggerAnimations() {
 				return "animate fadeIn";
 			}
-	
-			function onYouTubeIframeAPIReady() {
-				var videos = $$('iframe'),
-				    // the iframes elements
-				players = [],
-				    // an array where we stock each videos youtube instances class
-				playingID = null; // stock the current playing video
-				for (var i = 0; i < videos.length; i++) // for each iframes
-				{
-					var currentIframeID = videos[i].id; // we get the iframe ID
-					players[currentIframeID] = new YT.Player(currentIframeID); // we stock in the array the instance
-					// note, the key of each array element will be the iframe ID
-	
-					videos[i].onmouseover = function (e) {
-						// assigning a callback for this event
-						var currentHoveredElement = e.target;
-						if (playingID) // if a video is currently played
-							{
-								players[playingID].pauseVideo();
-							}
-						players[currentHoveredElement.id].playVideo();
-						playingID = currentHoveredElement.id;
-					};
-				}
-			}
-			onYouTubeIframeAPIReady();
+
+			// 	function onYouTubeIframeAPIReady() {
+			//     var videos = youTubeFunc('iframe'), // the iframes elements
+			//         players = [], // an array where we stock each videos youtube instances class
+			//         playingID = null; // stock the current playing video
+			//     for (var i = 0; i < videos.length; i++) // for each iframes
+			//     {
+			//         var currentIframeID = videos[i].id; // we get the iframe ID
+			//         players[currentIframeID] = new YT.Player(currentIframeID); // we stock in the array the instance
+			//         // note, the key of each array element will be the iframe ID
+			//
+			//         videos[i].onmouseover = function(e) { // assigning a callback for this event
+			//             var currentHoveredElement = e.target;
+			//             if (playingID) // if a video is currently played
+			//             {
+			//                 players[playingID].pauseVideo();
+			//             }
+			//             players[currentHoveredElement.id].playVideo();
+			//             playingID = currentHoveredElement.id;
+			//         };
+			//     }
+			//
+			// }
+			// onYouTubeIframeAPIReady();
 		}
 	})();
 
@@ -321,7 +315,7 @@
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	(function () {
 		angular.module('shardulGo').factory("preloader", function ($q, $rootScope) {
 			// I manage the preloading of image objects. Accepts an array of image URLs.
@@ -468,35 +462,35 @@
 	 * Created by Krys on 9/30/2016.
 	 */
 	'use strict';
-	
+
 	(function () {
 		'use strict';
-	
+
 		/**
 	  * @ngdoc module
 	  * @name starterAngularFractal.module:starterAngularFractal
 	  * @description Gets some squirrels on the scope.
 	  */
 		angular.module('shardulGo').controller('ContactController', ContactController);
-	
+
 		/* @ngInject */
 		function ContactController($scope, $timeout, $window, $location, $route, preloader) {
 			var vm = this;
 			vm.route = route;
 			vm.triggerAnimations = triggerAnimations;
 			vm.sendEventTracker = sendEventTracker;
-	
+
 			vm.delay = false;
 			$timeout(function () {
 				vm.delay = true;
 			}, 1000);
-	
+
 			vm.currentRoute = $route;
-	
+
 			function route(url) {
 				$location.path(url);
 			}
-	
+
 			vm.collapsibleElements = [{
 				icon: 'fa fa-envelope-o',
 				title: 'Gmail',
@@ -516,7 +510,7 @@
 				linkText: ' Github',
 				text: "View my side projects on"
 			}];
-	
+
 			vm.options = {
 				scrollwheel: false,
 				control: false,
@@ -524,18 +518,18 @@
 				disableDoubleClickZoom: true,
 				disableDefaultUI: true
 			};
-	
+
 			vm.map = { center: { latitude: 45.53, longitude: -122.64 }, zoom: 9 };
-	
+
 			init();
 			function init() {
 				$window.ga('send', 'pageview', { page: $location.url() });
 			}
-	
+
 			function triggerAnimations() {
 				return "animate fadeIn";
 			}
-	
+
 			function sendEventTracker(clicked) {
 				ga('send', 'event', clicked, 'clicked');
 			}
@@ -550,12 +544,12 @@
 	 * Created by Krys on 10/25/2016.
 	 */
 	'use strict';
-	
+
 	(function () {
 		'use strict';
-	
+
 		angular.module('shardulGo').directive('krysFooter', Footer);
-	
+
 		/* @ngInject */
 		function Footer() {
 			return {

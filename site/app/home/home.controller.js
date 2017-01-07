@@ -30,7 +30,6 @@
 		init();
 		function init() {
 			$window.ga('send', 'pageview', { page: $location.url() });
-			console.log();
 		}
 
 		vm.currentRoute = $route;

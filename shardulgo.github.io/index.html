@@ -1,0 +1,110 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7 html"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8 html"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 html"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js html">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shardul Golwalkar</title>
+	<meta name="description" content="Shardul Golwalkar&apos;s personal website">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<!-- inject:css -->
+	<link rel="stylesheet" href="styles/animate-8c2dcd1f4a.css">
+	<link rel="stylesheet" href="styles/main-89edda4cc6.css">
+	<link rel="stylesheet" href="styles/materialize-10a69a9e52.css">
+	<!-- endinject -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://use.fontawesome.com/74f57743f9.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.1.9/angular-materialize.min.js"></script>
+	<script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+	<script type="text/javascript" charset="utf-8">
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-53307846-1', 'auto');
+	</script>
+	<!-- End Google Analytics -->
+</head>
+
+<body class="body html" ng-app="shardulGo" ng-cloak="">
+	<nav class="white navButtons navbar-fixed-top" role="navigation" ng-controller="HomeController as vm">
+		<div class="nav-wrapper container" style="width: 100%;
+					 padding-left: 20px;
+					 padding-right: 20px;
+					 margin-left: 0;
+					 margin-right: 0px !important;
+					 max-width: 100%">
+			<a id="logo-container" href="" class="brand-logo hide-on-med-and-down" ng-click="vm.route(&apos;home&apos;); vm.sendEventTracker(&apos;view home&apos;)"><img src="images/sglogo.png" style="width: 1.5em;vertical-align: middle;padding-bottom: 6px"></a>
+			<ul class="right hide-on-med-and-down navButtons" style="text-decoration: none !important; color: black">
+				<li ng-class="{activeTab: vm.currentRoute.current.activeTab == &apos;home&apos;}"><a href="" ng-click="vm.route(&apos;home&apos;); vm.sendEventTracker(&apos;view home&apos;)">Home</a></li>
+				<li ng-class="{activeTab: vm.currentRoute.current.activeTab == &apos;about&apos;}"><a href="" ng-click="vm.route(&apos;about&apos;); vm.sendEventTracker(&apos;view about&apos;)">About Me</a></li>
+				<!-- <li ng-class="{activeTab: vm.currentRoute.current.activeTab == 'blog'}"><a href="" ng-click="vm.route('blog'); vm.sendEventTracker('view blog')">Blog</a></li> -->
+				<li ng-class="{activeTab: vm.currentRoute.current.activeTab == &apos;education&apos;}"><a href="" ng-click="vm.route(&apos;education&apos;); vm.sendEventTracker(&apos;view education&apos;)">Education</a></li>
+				<li ng-class="{activeTab: vm.currentRoute.current.activeTab == &apos;experience&apos;}"><a href="" ng-click="vm.route(&apos;experience&apos;); vm.sendEventTracker(&apos;view experience&apos;)">Experience</a></li>
+				<li ng-class="{activeTab: vm.currentRoute.current.activeTab == &apos;contact&apos;}"><a href="" ng-click="vm.route(&apos;contact&apos;); vm.sendEventTracker(&apos;view contact&apos;)">Contact Me</a></li>
+			</ul>
+			<div id="nav-mobile" class="side-nav drawer" style="text-align: left; width: 100px; max-height: 100% !important; padding-bottom: 0; overflow-x: hidden">
+				<a href="" class="row" ng-click="vm.route(&apos;home&apos;); vm.sendEventTracker(&apos;view home&apos;)">
+					<div class="icon-block center drawerItem">
+						<h2 class="center black-text drawerSpacing" style="margin-top: 10px !important"><img src="images/knlogo.png" style="width: 0.7em;vertical-align: middle"></h2>
+						<h6 class="center black-text">Home</h6></div>
+				</a><br>
+				<a href="" class="row" ng-click="vm.route(&apos;about&apos;); vm.sendEventTracker(&apos;view about&apos;)">
+					<div class="icon-block center drawerItem">
+						<h4 class="center black-text drawerSpacing" style="margin-top: -10px !important"><i class="fa fa-info-circle" aria-hidden="true"></i></h4>
+						<h6 class="center black-text drawerItemTop">About Me</h6></div>
+				</a><br>
+				<a href="" class="row" ng-click="vm.route(&apos;education&apos;); vm.sendEventTracker(&apos;view education&apos;)">
+					<div class="icon-block center drawerItem">
+						<h4 class="center black-text drawerSpacing" style="margin-top: -10px !important"><i class="fa fa-graduation-cap" aria-hidden="true"></i></h4>
+						<h6 class="center black-text drawerItemTop">Education</h6></div>
+				</a><br>
+				<a href="" class="row" ng-click="vm.route(&apos;blog&apos;); vm.sendEventTracker(&apos;view blog&apos;)">
+					<div class="icon-block center drawerItem">
+						<h4 class="center black-text drawerSpacing" style="margin-top: -10px !important"><i class="fa fa-graduation-cap" aria-hidden="true"></i></h4>
+						<h6 class="center black-text drawerItemTop">Blog</h6></div>
+				</a><br>
+				<a href="" class="row" ng-click="vm.route(&apos;experience&apos;); vm.sendEventTracker(&apos;view experience&apos;)">
+					<div class="icon-block center drawerItem">
+						<h4 class="center black-text drawerSpacing" style="margin-top: -10px !important"><i class="fa fa-code" aria-hidden="true"></i></h4>
+						<h6 class="center black-text drawerItemTop">Experience</h6></div>
+				</a><br>
+				<a href="" class="row" ng-click="vm.route(&apos;contact&apos;); vm.sendEventTracker(&apos;view contact&apos;)">
+					<div class="icon-block center" style="border-bottom: none">
+						<h4 class="center black-text drawerSpacing" style="margin-top: -10px !important"><i class="fa fa-envelope-o" aria-hidden="true"></i></h4>
+						<h6 class="center black-text drawerItemTop">Contact Me</h6></div>
+				</a>
+			</div><a href="#" ng-click="vm.sendEventTracker(&apos;open mobile side nav&apos;)" data-activates="nav-mobile" data-sidenav="left" data-menuwidth="200" data-closeonclick="true" class="button-collapse homeMenuButton"><i class="material-icons">menu</i></a></div>
+	</nav>
+	<div ng-view=""></div>
+	<krys-footer></krys-footer>
+	<!-- bower:js -->
+	<!-- endinject -->
+	<!-- inject:js -->
+	<script src="app-17b6a2c46d.js"></script>
+	<!-- endinject -->
+</body>
+
+</html>
